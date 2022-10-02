@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/assets/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/owlcarousel/assets/owl.theme.default.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/assets/owlcarousel/jquery.min.js"></script>
+    <script src="/assets/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light container">
+        <div class="logo">
+            <img src="assets/imgs/logo.png" alt="">
+        </div>
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://demo4.datvang.top/gioi-thieu/">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://demo4.datvang.top/cua-hang/">Cửa hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://demo4.datvang.top/dich-vu/">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://demo4.datvang.top/tin-tuc-moi/">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://demo4.datvang.top/lien-he/">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="iconsearch ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="off_canvas">
+                <button class="btn btn_menubar" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="fa-solid fa-bars"></i></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-bars">
+                            <ul>
+                                <li><a href="">TRANG CHỦ</a></li>
+                                <li><a href="">GIỚI THIỆU</a></li>
+                                <li><a href="">CỬA HÀNG</a></li>
+                                <li><a href="">DỊCH VỤ</a></li>
+                                <li><a href="">TIN TỨC</a></li>
+                                <li><a href="">LIÊN HỆ</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Main -->
+    <div id="demo" class="carousel slide banner" data-bs-ride="carousel">
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/imgs/slider1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/imgs/slider2.jpg" alt="Chicago" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <div class="control">
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <section class="sec1 container">
+        <div class="row row-1">
+            <div class="col-6 col-sm-3">
+                <div class="icon-box">
+                    <div class="box-img">
+                        <img src="assets/imgs/img1.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h3>Nhóm trái cây</h3>
+                        <p>Là một trong những ngành kinh tế chủ lực, nông nghiệp Việt Nam đang có bước chuyển mình phát
+                            triển mạnh mẽ. Các hộ gia đình đã mạnh dạn đầu tư vào sản xuất nông nghiệp nay càng có thêm
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3">
+                <div class="icon-box">
+                    <div class="box-img">
+                        <img src="assets/imgs/img2.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h3>Nhóm trái cây</h3>
+                        <p>Là một trong những ngành kinh tế chủ lực, nông nghiệp Việt Nam đang có bước chuyển mình phát
+                            triển mạnh mẽ. Các hộ gia đình đã mạnh dạn đầu tư vào sản xuất nông nghiệp nay càng có thêm
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3">
+                <div class="icon-box">
+                    <div class="box-img">
+                        <img src="assets/imgs/img3.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h3>Nhóm trái cây</h3>
+                        <p>Là một trong những ngành kinh tế chủ lực, nông nghiệp Việt Nam đang có bước chuyển mình phát
+                            triển mạnh mẽ. Các hộ gia đình đã mạnh dạn đầu tư vào sản xuất nông nghiệp nay càng có thêm
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3">
+                <div class="icon-box">
+                    <div class="box-img">
+                        <img src="assets/imgs/img4.jpg" alt="">
+                    </div>
+                    <div class="box-text">
+                        <h3>Nhóm trái cây</h3>
+                        <p>Là một trong những ngành kinh tế chủ lực, nông nghiệp Việt Nam đang có bước chuyển mình phát
+                            triển mạnh mẽ. Các hộ gia đình đã mạnh dạn đầu tư vào sản xuất nông nghiệp nay càng có thêm
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="sec2">
+        <div class="container section-title-container">
+            <h2 class="section-title section-title-normal">
+                <b><span class="section-title-main">Dịch vụ</span></b>
+            </h2>
+        </div>
+    </section>
+    <section class="container sec3">
+        <div class="row sec3-row">
+            <div class="col-12 col-md-4 sec3-col1">
+                <img src="assets/imgs/img5.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-8 sec3-col2">
+                <div class="col-inner-text">
+                    <p>Cùng với sự phát triển của nền kinh tế, nhu cầu thực phẩm an toàn, bảo vệ sức khỏe đang được
+                        người tiêu dùng Việt Nam ngày càng quan tâm nhiều hơn. Bên cạnh đó, những sự kiện như rau “bẩn”,
+                        thực phẩm kém chất lượng, trái cây nhiễm độc, sự gia tăng của bệnh ung thư, v.v… đã đặt ra vấn
+                        đề cấp thiết về chất lượng và an toàn vệ sinh thực phẩm của người tiêu dùng.</p>
+                    <p>Đáp ứng nhu cầu ngày càng tăng của người tiêu dùng Việt Nam về nông sản an toàn. Tạo kênh phân
+                        phối trực tiếp từ nhà sản xuất đến người tiêu dùng cuối cùng. Quảng bá sản phẩm nông sản an toàn
+                        Việt Nam.Liên kết dài hạn và đảm bảo đầu ra ổn định cho nhà sản xuất nông sản an toàn, góp phần
+                        vào sự nghiệp phát triển ngành nông nghiệp Việt Nam.</p>
+                    <p>HTX Nông nghiệp chọn con đường gắn bó với rau sạch Đà Lạt, bởi đây chính là thế mạnh, là hướng đi
+                        thuận lợi với những xã viên vốn là nông dân chuyên trồng rau. Hơn 70 ha đất của xã viên tham gia
+                        hợp tác xã được xác định trồng và cung cấp cho thị trường rau VietGAP mang thương hiệu Nông
+                        nghiệp.</p>
+                    <p>Chủ trương khép kín quy trình sản xuất để rau đạt chuẩn VietGAP, HTX Nông nghiệp sản xuất giống
+                        rau trong vỉ xốp cung cấp cho xã viên đồng thời cung cấp những loại thuốc bảo vệ thực vật nằm
+                        trong danh mục. Sản phẩm sau thu hoạch, HTX sơ chế và bao tiêu toàn bộ cho xã viên. Bởi vậy, rau
+                        của Nông nghiệp là rau an toàn, HTX tự công bố chất lượng và được cơ quan kiểm dịch chứng nhận.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" sec4">
+        <div class="container sec4-wrapper">
+            <div class="sec4-title">
+                <h2 class="sec4-title-main">SẢN PHẨM MỚI</h2>
+            </div>
+            <div class="row ">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sec4-box">
+                        <a href="https://demo4.datvang.top/san-pham/khoai-lang-nhat-tim/">
+                            <div class="sec4-box-img">
+                                <img src="assets/imgs/khoai-lang-nhat-tim.png" alt="">
+                            </div>
+                            <div class="sec4-box-text">
+                                <p class="sec4-box-text-title"><a href=""> Khoai Lang Nhật tím</a></p>
+                                <div class="price">
+                                    <bdi>
+                                        33.000&nbsp
+                                        <span class="woocommerce-Price-currencySymbol">₫</span>
+                                    </bdi>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sec4-box">
+                        <a href="https://demo4.datvang.top/san-pham/bong-cai-xanh/">
+                            <div class="sec4-box-img">
+                                <img src="assets/imgs/bong-cai-xanh.jpg" alt="">
+                            </div>
+                            <div class="sec4-box-text">
+                                <p class="sec4-box-text-title"><a href=""> Bông Cải xanh</a></p>
+                                <div class="price">
+                                    <bdi>
+                                        31.000&nbsp
+                                        <span class="woocommerce-Price-currencySymbol">₫</span>
+                                    </bdi>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sec4-box">
+                        <a href="https://demo4.datvang.top/san-pham/ca-tim/">
+                            <div class="sec4-box-img">
+                                <img src="assets/imgs/ca-tim.jpg" alt="">
+                            </div>
+                            <div class="sec4-box-text">
+                                <p class="sec4-box-text-title"><a href=""> Cà tím</a></p>
+                                <div class="price">
+                                    <bdi>
+                                        22.000&nbsp
+                                        <span class="woocommerce-Price-currencySymbol">₫</span>
+                                    </bdi>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sec4-box">
+                        <a href="https://demo4.datvang.top/san-pham/khoai-tay-da-lat/">
+                            <div class="sec4-box-img">
+                                <img src="assets/imgs/khoai-tay.jpg" alt="">
+                            </div>
+                            <div class="sec4-box-text">
+                                <p class="sec4-box-text-title"><a href=""> Khoai Tây Đà Lạt</a></p>
+                                <div class="price">
+                                    <bdi>
+                                        15.000&nbsp
+                                        <span class="woocommerce-Price-currencySymbol">₫</span>
+                                    </bdi>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sec4-box">
+                        <a href="https://demo4.datvang.top/san-pham/bi-do-tron-da-lat/">
+                            <div class="sec4-box-img">
+                                <img src="assets/imgs/bi-do-ho-lo-loai-1kg.jpg" alt="">
+                            </div>
+                            <div class="sec4-box-text">
+                                <p class="sec4-box-text-title"><a href=""> Bí Đỏ tròn Đà Lạt</a></p>
+                                <div class="price">
+                                    <bdi>
+                                        12.000&nbsp
+                                        <span class="woocommerce-Price-currencySymbol">₫</span>
+                                    </bdi>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sec4-box">
+                        <a href="https://demo4.datvang.top/san-pham/dua-leo/">
+                            <div class="sec4-box-img">
+                                <img src="assets/imgs/dua-leo.jpg" alt="">
+                            </div>
+                            <div class="sec4-box-text">
+                                <p class="sec4-box-text-title"><a href=""> Dưa leo</a></p>
+                                <div class="price">
+                                    <bdi>
+                                        16.000&nbsp
+                                        <span class="woocommerce-Price-currencySymbol">₫</span>
+                                    </bdi>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sec4-box">
+                        <a href="https://demo4.datvang.top/san-pham/bo-sap/">
+                            <div class="sec4-box-img">
+                                <img src="assets/imgs/bo-sap.jpg" alt="">
+                            </div>
+                            <div class="sec4-box-text">
+                                <p class="sec4-box-text-title"><a href=""> Bơ sáp</a></p>
+                                <div class="price">
+                                    <bdi>
+                                        26.000&nbsp
+                                        <span class="woocommerce-Price-currencySymbol">₫</span>
+                                    </bdi>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="sec4-box">
+                        <a href="https://demo4.datvang.top/san-pham/chuoi-laba/">
+                            <div class="sec4-box-img">
+                                <img src="assets/imgs/chuoi.jpg" alt="">
+                            </div>
+                            <div class="sec4-box-text">
+                                <p class="sec4-box-text-title"><a href=""> Chuối Laba</a></p>
+                                <div class="price">
+                                    <bdi>
+                                        16.000&nbsp
+                                        <span class="woocommerce-Price-currencySymbol">₫</span>
+                                    </bdi>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section class="container sec5">
+        <div class="sec5-title">
+            <h2 class="sec5-title-text section-title-main">HÌNH ẢNH THỰC TẾ</h2>
+        </div>
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img src="assets/imgs/gallery1.jpeg" class="gallery__img" alt="Image 1">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="assets/imgs/gallery2.jpeg" class="gallery__img" alt="Image 1">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="assets/imgs/gallery3.jpg" class="gallery__img" alt="Image 1">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img src="assets/imgs/gallery4.jpg" class="gallery__img" alt="Image 1">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src="assets/imgs/gallery5.png" class="gallery__img" alt="Image 1">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="assets/imgs/gallery6.jpg" class="gallery__img" alt="Image 1">
+            </figure>
+            <figure class="gallery__item gallery__item--7">
+                <img src="assets/imgs/gallery7.jpg" class="gallery__img" alt="Image 1">
+            </figure>
+            <figure class="gallery__item gallery__item--8">
+                <img src="assets/imgs/gallery8.jpg" class="gallery__img" alt="Image 1">
+            </figure>
+        </div>
+    </section>
+    <section class="container sec6">
+        <div class="sec6-title">
+            <h2 class="sec6-title-text section-title-main">TIN TỨC MỚI NHẤT</h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <div class="col-inner-box">
+                    <a
+                        href="https://demo4.datvang.top/cao-diem-mua-dich-hang-hoa-tai-ha-noi-doi-dao-dan-khong-can-tich-tru/">
+                        <div class="sec6-box-img">
+                            <img src="assets/imgs/photo-1-1585360812530585629033.jpg" alt="">
+                        </div>
+                        <div class="sec6-box-text">
+                            <h5 class=" post-title ">Cao điểm mùa dịch ,hàng hóa tại Hà Nội đồi dào</h5>
+                            <div class="is-divider"></div>
+                            <p>Người dân không cần tích trữ lương thực, hệ thống các siêu thị trên địa bàn thành phố đã
+                                dự [...] </p>
+                            <button class="btn-seedetails">Xem chi tiết</button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="col-inner-box">
+                    <a
+                        href="https://demo4.datvang.top/dam-bao-du-hang-hoa-trong-moi-tinh-huong-chong-dich-covid-19-nguoi-dan-khong-can-mua-tich-tru/">
+                        <div class="sec6-box-img">
+                            <img src="assets/imgs/photo-1-15856421586671644723905.jpg" alt="">
+                        </div>
+                        <div class="sec6-box-text">
+                            <h5 class=" post-title ">Đảm bảo đủ hàng hóa chống dịch Covid-19</h5>
+                            <div class="is-divider"></div>
+                            <p>Ngoài các điểm bán hàng hiện có, các địa phương bố trí các điểm bán hàng mới bảo đảm cung
+                                [...] </p>
+                            <button class="btn-seedetails">Xem chi tiết</button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="col-inner-box">
+                    <a href="https://demo4.datvang.top/canh-bao-nguy-co-khung-hoang-nguon-cung-thuc-pham-do-covid-19/">
+                        <div class="sec6-box-img">
+                            <img src="assets/imgs/photo-1-1586318628026505951256-15863186449172027686349-crop-15863186620071488398538.png"
+                                alt="">
+                        </div>
+                        <div class="sec6-box-text">
+                            <h5 class=" post-title ">Cảnh báo nguy cơ khủng hoảng nguồn cung thực phẩm do Covid-19</h5>
+                            <div class="is-divider"></div>
+                            <p>Sự đình trệ trong chế biến và vận chuyển có thể dẫn đến tăng giá bất thường đối với thực
+                                [...] </p>
+                            <button class="btn-seedetails">Xem chi tiết</button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="col-inner-box">
+                    <a
+                        href="https://demo4.datvang.top/trong-mua-dich-benh-dung-bo-lo-12-loai-rau-cu-qua-re-tien-nay-de-tang-cuong-suc-de-khang-giup-chong-lai-virus-hieu-qua/">
+                        <div class="sec6-box-img">
+                            <img src="assets/imgs/photo1588428059275-1588428059495-crop-15884281612941187193032.jpg"
+                                alt="">
+                        </div>
+                        <div class="sec6-box-text">
+                            <h5 class=" post-title ">Đừng bỏ lỡ 12 loại rau củ quả rẻ tiền này để tăng cường sức đề
+                                kháng, giúp chống lại virus hiệu quả</h5>
+                            <div class="is-divider"></div>
+                            <p>Nếu không muốn tốn một đống tiền mua thuốc bổ để cải thiện sức đề kháng, bạn có thể tự
+                                [...] </p>
+                            <button class="btn-seedetails">Xem chi tiết</button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="col-inner-box">
+                    <a href="https://demo4.datvang.top/khung-hoang-thuc-pham-ke-thua-do-bo-nguoi-thieu-di-san/">
+                        <div class="sec6-box-img">
+                            <img src="assets/imgs/photo1588751960788-1588751960985-crop-1588752050358261263836.jpg"
+                                alt="">
+                        </div>
+                        <div class="sec6-box-text">
+                            <h5 class=" post-title ">Khủng hoảng thực phẩm: Kẻ thừa đổ bỏ, người thiếu đi săn</h5>
+                            <div class="is-divider"></div>
+                            <p>Hoạt động vận tải và chuỗi cung ứng toàn thế giới bị gián đoạn là nguyên nhân dẫn tới
+                                thiếu [...] </p>
+                            <button class="btn-seedetails">Xem chi tiết</button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="col-inner-box">
+                    <a
+                        href="https://demo4.datvang.top/tuong-la-thu-phai-bo-di-7-phan-thua-cua-cac-loai-thuc-pham-nay-co-the-tai-su-dung-nhu-nhung-mon-an-thom-ngon/">
+                        <div class="sec6-box-img">
+                            <img src="assets/imgs/photo-1-15965063190997798832.jpg" alt="">
+                        </div>
+                        <div class="sec6-box-text">
+                            <h5 class=" post-title ">7 phần thừa của các loại thực phẩm này có thể tái sử dụng như những
+                                món ăn thơm ngon</h5>
+                            <div class="is-divider"></div>
+                            <p>Lãng phí thực phẩm là một vấn đề lớn trên toàn thế giới hiện nay, góp phần làm gia tăng
+                                [...] </p>
+                            <button class="btn-seedetails">Xem chi tiết</button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="col-inner-box">
+                    <a
+                        href="https://demo4.datvang.top/chung-ta-la-tat-ca-nhung-gi-chung-ta-an-nguoi-khon-ngoan-biet-dung-10-thuc-pham-thay-the-nay-de-an-lanh-manh-nhieu-ma-khong-lo-thua-mo/">
+                        <div class="sec6-box-img">
+                            <img src="assets/imgs/photo1598152623661-1598152623962737732220.jpg" alt="">
+                        </div>
+                        <div class="sec6-box-text">
+                            <h5 class=" post-title ">Người khôn ngoan biết dùng 10 thực phẩm thay thế</h5>
+                            <div class="is-divider"></div>
+                            <p>Thức ăn mà chúng ta hàng ngày nạp vào cơ thể tác động trực tiếp đến sức khỏe toàn diện.
+                                [...] </p>
+                            <button class="btn-seedetails">Xem chi tiết</button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="col-inner-box">
+                    <a href="https://demo4.datvang.top/goi-y-5-mam-com-gio-to-tang-cuong-suc-khoe-mua-dich/">
+                        <div class="sec6-box-img">
+                            <img src="assets/imgs/5-mam-com-gio-to-300x217-1.jpg" alt="">
+                        </div>
+                        <div class="sec6-box-text">
+                            <h5 class=" post-title ">Gợi ý 5 mâm cơm Giỗ Tổ tăng cường sức khỏe mùa dịch</h5>
+                            <div class="is-divider"></div>
+                            <p>Mỗi năm vào ngày mùng 10 tháng 3 Âm Lịch, người Việt tổ chức ngày Giỗ Tổ Hùng Vương nhằm
+                                [...] </p>
+                            <button class="btn-seedetails">Xem chi tiết</button>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper container">
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <div class="footer-col-inner">
+                        <h2>Về chúng tôi</h2>
+                        <p>Địa chỉ: 22 Lê Văn Miến, Phường Thảo Điền, TP Thủ Đức, TP Hồ Chí Minh</p>
+                        <p>Hotline: 0965.337.117</p>
+                        <p>Email: info@datvang.top</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="footer-col-inner">
+                        <h2>Các chính sách</h2>
+                        <ul class="list-li">
+                            <li>
+                                <a href="">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="">Hướng dẫn thanh toán</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách đổi trả</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách bảo mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="footer-col-inner-bar">
+                        <h2>Danh mục sản phẩm</h2>
+                        <div class="footer-col3">
+                            <a href="">Chưa phân loại</a>
+                            <a href=""> Nhóm củ , quả </a>
+                            <a href=""> Nhóm trái cây</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="footer-col-inner-map">
+                        <h2>Bản đồ</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0813563477204!2d106.73151491424628!3d10.80508086162006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752619c4319e09%3A0x24b7f3a0de9d3245!2sAliat%20Legal!5e0!3m2!1svi!2s!4v1644813754046!5m2!1svi!2s"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            data-rocket-lazyload="fitvidscompatible"
+                            data-lazy-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0813563477204!2d106.73151491424628!3d10.80508086162006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752619c4319e09%3A0x24b7f3a0de9d3245!2sAliat%20Legal!5e0!3m2!1svi!2s!4v1644813754046!5m2!1svi!2s"
+                            class="lazyloaded" data-was-processed="true"></iframe><noscript><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0813563477204!2d106.73151491424628!3d10.80508086162006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752619c4319e09%3A0x24b7f3a0de9d3245!2sAliat%20Legal!5e0!3m2!1svi!2s!4v1644813754046!5m2!1svi!2s"
+                                width="100%" height="200" style="border:0;" allowfullscreen=""
+                                loading="lazy"></iframe></noscript>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="absolute-footer text-center">
+        <div class="container clearfix">
+            <div class="footer-primary pull-left">
+                <div class="copyright-footer">
+                    <p class="copyright">© 2021 - All rights Reserved. Design by <a href="http://www.aliatbranding.com/"
+                            target="_blank">Aliat Branding</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
